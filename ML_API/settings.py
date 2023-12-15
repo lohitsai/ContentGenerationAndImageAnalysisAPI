@@ -125,12 +125,7 @@ MEDIA_ROOT = BASE_DIR / "mediafiles"
 # URL used to access the media
 MEDIA_URL = "/media/"
 
-REST_FRAMEWORK = {
-    "DEFAULT_RENDERER_CLASSES": [
-        "rest_framework.renderers.BrowsableAPIRenderer",
-        "rest_framework.renderers.JSONRenderer",
-    ]
-}
+REST_FRAMEWORK = {"DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"]}
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

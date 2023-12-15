@@ -48,4 +48,4 @@ class ImageAnalyze(APIView):
         )
         li: list = response.json()["result"]["tags"]
         tags = [x["tag"]["en"] for x in li]
-        return Response({"working": tags})
+        return Response({"Image Keywords": tags})
